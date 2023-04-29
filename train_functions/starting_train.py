@@ -15,7 +15,7 @@ def starting_train(train_dataset, val_dataset, model, hyperparameters, n_eval):
         hyperparameters: Dictionary containing hyperparameters.
         n_eval:          Interval at which we evaluate our model.
     """
-
+    
     # Get keyword arguments
     batch_size, epochs = hyperparameters["batch_size"], hyperparameters["epochs"]
 

@@ -21,7 +21,7 @@ def main():
 
     train_dataset = StartingDataset(data_path)
     val_dataset = StartingDataset(data_path)
-    model = StartingNetwork()
+    model = StartingNetwork(len(train_dataset) )
     starting_train(
         train_dataset=train_dataset,
         val_dataset=val_dataset,
