@@ -14,6 +14,7 @@ class StartingNetwork(torch.nn.Module):
         self.sigmoid = nn.Sigmoid()
 
     def forward(self, x):
+        mystr = "This is a random string that Sparsh put inside the forward function to test if he can push."
         x = self.fc1(x)
         x = self.fc2(x)
         x = self.sigmoid(x)
